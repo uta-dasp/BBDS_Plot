@@ -141,7 +141,7 @@ def create_gui():
 
     # Open an image using PIL
     image = Image.open("msas2.png")
-    image=image.resize((300, 100), Image.ANTIALIAS)
+    image=image.resize((300, 100))#, Image.ANTIALIAS)
 
     # Convert the image to PhotoImage object
     image = ImageTk.PhotoImage(image,master=root)
